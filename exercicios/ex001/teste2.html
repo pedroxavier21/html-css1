@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Futebol News</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* Estilo do cabeçalho e rodapé */
+    header,
+    footer {
+      background: #b00000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      background-color: #cf0808;
+    }
+
+    /* Estilo do conteúdo principal */
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    /* Estilo das notícias */
+    .noticia {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 5px solid #b00000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .noticia h3 {
+      margin-top: 0;
+      color: #b00000;
+      font-size: 1.5rem;
+    }
+
+    .noticia small {
+      display: block;
+      color: #777;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    /* Estilo responsivo para telas menores */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        font-size: 1rem;
+      }
+
+      main {
+        padding: 15px;
+      }
+
+      .noticia h3 {
+        font-size: 1.3rem;
+      }
+
+      .noticia p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Futebol News</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Regras e Curiosidades</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Regras e Curiosidades</h2>
+    <ul>
+      <li>O impedimento acontece quando...</li>
+      <li>O jogo tem dois tempos de 45 minutos...</li>
+      <li>Cartão amarelo é para advertência...</li>
+    </ul>
+
+    <section id="noticias">
+      <h2>Últimas Notícias</h2>
+      <!-- Notícias serão carregadas aqui -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Futebol News</p>
+  </footer>
+
+  <script>
+    // Simulação de um arquivo "noticias.json"
+    const noticias = [
+      {
+        "titulo": "Time X vence o campeonato",
+        "conteudo": "Em um jogo emocionante, o Time X derrotou o Time Y por 2 a 1.",
+        "data": "2025-04-15"
+      },
+      {
+        "titulo": "Jogador Z quebra recorde",
+        "conteudo": "Z marcou seu 100º gol e entrou para a história.",
+        "data": "2025-04-10"
+      }
+    ];
+
+    const hoje = new Date();
+    const container = document.getElementById('noticias');
+
+    noticias.forEach(noticia => {
+      const dataNoticia = new Date(noticia.data);
+      const diasPassados = Math.floor((hoje - dataNoticia) / (1000 * 60 * 60 * 24));
+
+      if (diasPassados <= 7) { // exibe apenas notícias dos últimos 7 dias
+        const div = document.createElement('div');
+        div.className = 'noticia';
+        div.innerHTML = `
+          <h3>${noticia.titulo}</h3>
+          <p>${noticia.conteudo}</p>
+          <small>Publicado em: ${noticia.data}</small>
+        `;
+        container.appendChild(div);
+      }
+    });
+  </script>
+</body>
+
+</html>
