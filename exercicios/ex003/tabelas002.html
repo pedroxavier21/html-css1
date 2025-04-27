@@ -12,22 +12,37 @@
         }
         table{
             width: 500px;
-            border-collapse: collapse
+            border-collapse: collapse;
+            position: relative;
         }
         td,th{
             border: 1px solid black;
             padding: 10px; 
         }
-        thead{
-            background-color: gray;
-            color: white;
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:  rgba(0, 0, 0, 0.685);;
         }
-        tfoot{
-            background-color: gray;
+        tfoot, thead{
+            background-color: rgba(0, 0, 0, 0.685);
             color: #fff;
         }
+        tbody > tr:nth-child(2n)
+        {
+            background-color: lightgray;
+        }
+
         .num{
         font-style: normal;
+        text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -167,5 +182,37 @@
                 <td>Roraima</td>
                 <td class="num">605.761</td>
             </tr>
+        </table>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>        <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditii
+                s quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellat. Modi ducimus vel eaque veritatis perferendis dolore perspiciatis! Ducimus culpa ratione quisquam autem consequatur id error ex totam? Ad, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, reprehenderit suscipit eveniet nostrum perferendis saepe id voluptates voluptatibus, illum porro officiis accusantium sit mollitia assumenda veritatis nihil, labore consequatur non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quo aspernatur vel iste veniam consequuntur. Tempore, nostrum dolores perspiciatis autem, dolore ipsum in harum neque dolorum repellendus ullam, iusto qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum omnis ullam hic veniam dolor, exercitationem nihil, amet et doloribus corporis tempora aliquam quisquam inventore voluptas libero aspernatur enim quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis, aliquid quisquam rem officia nesciunt, laborum commodi optio sint fugiat iste blanditiis quae suscipit vel sunt. Temporibus laudantium eligendi a!
+            </p>
+
 </body>
 </html>
