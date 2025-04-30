@@ -7,12 +7,23 @@
     <style>
 
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
         iframe{
          margin: auto;
          display: block;
          border: 2px solid black;
+        }
+        .erro{
+            text-decoration: none;
+            text-shadow: 1px 2px 3px black;
+            transition: 0.9s;
+
+        }
+
+        .erro:hover{
+            text-decoration: underline blue;
+          background-color: blue;
         }
     </style>
 </head>
@@ -20,7 +31,9 @@
     <h1>Teste com iframe </h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eius error in ut eligendi eos beatae recusandae adipisci. Fugiat facere similique, porro dolores numquam quasi obcaecati laudantium rem quaerat quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid pariatur velit rerum, aspernatur officia harum at sunt dignissimos nobis recusandae blanditiis eos. Minima dolorum, earum id nesciunt modi incidunt.</p>
 
-    <iframe src="pag001.html" frameborder="0" height="500px" width="600px"></iframe>
+    <iframe src="pag001.html" frameborder="0" height="500px" width="600px">
+        <p class="erro"> Infelizmente seu navegador não é compativel <a href="pag001.html" target="_self">Clique aqui</a> para ir pra outra página</p>
+    </iframe>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, soluta consequuntur, iusto dignissimos nulla illo officia perspiciatis aut possimus alias, modi sint nam eveniet corrupti voluptas ipsum asperiores aspernatur nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea accusantium, modi distinctio laboriosam magni blanditiis molestias maiores, eos eius commodi? Magnam, dignissimos rem voluptates magni incidunt hic modi illo?</p>
     
