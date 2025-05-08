@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulario</title>
+    <style>
+  
+    </style>
+</head>
+<body>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+            <h1>Testando formulário</h1>
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" maxlength="30" minlength="4" placeholder="Nome" autocomplete="name">
+
+           <label for="inome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="isobrenome" maxlength="30" minlength="4" placeholder="Sobrenome" autocomplete="name">
+        </p>
+
+
+         
+       
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="iemail" placeholder="Email">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="itelefone" aria-placeholder="(11) 9999-0000" maxlength="10" minlength="10">
+        
+        </p>
+
+
+        <p>
+            <input type="reset" value="Apagar tudo">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
