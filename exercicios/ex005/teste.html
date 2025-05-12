@@ -4,15 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #sexo{
+            width: 10%;
+           border-radius: 3px;
+        }
+        #jogos{
+            max-width: 12vw;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        legend{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        #cadastro{
+            width: 15vw;
+        }
+        div{
+            padding: 2px;
+        }
+    </style>
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <fieldset>
-        <form action="cadastro.php" method="post">
+    <fieldset id="sexo">
+        <legend>Sexo</legend>
+        
+            
+            <input type="radio" name="sexo" id="isxmas" value="m" checked>
+            <label for="isxmas">Masculino</label> <br>
+               
+            
+            <input type="radio" name="sexo" id="isxfem" value="f">
+            <label for="isxfem">Feminino</label>
+          
+    
+    </fieldset> 
+      <fieldset id="jogos">
+     <legend> Qual desses jogos você conhece? </legend>
+              
+       <input type="checkbox" name="ff" id="iff">
+       <label for="iff">Free fire</label><br>
 
-                
+    <input type="checkbox" name="fort" id="ifort">
+       <label for="ifort">Fortnite</label><br>
 
-        </form>
+       <input type="checkbox" name="br" id="ibr">
+       <label for="ibr">Brawl Star </label> <br>
+       
+       <input type="checkbox" name="mine" id="imine">
+       <label for="imine">Minecraft</label> <br>
+       
+       <input type="checkbox" name="tetris" id="itetris">
+       <label for="itetris">Tetris</label> <br>
+       <input type="checkbox" name="mario" id="imario">
+       <label for="imario">Mario Bros</label> <br>
+
+       <input type="checkbox" name="nenhum" id="inenhum">
+       <label for="inenhum">Nenhum</label>
+  </fieldset>   
+
+  <form action="cadastro.php" method="post">
+
+    <fieldset id="cadastro">
+        <legend>Cadastre-se</legend>
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Primeiro nome" required minlength="4" maxlength="10">
+        </div>
+         <div>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="Segundo nome" maxlength="40" minlength="4"> 
+         </div>
+         <div>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" placeholder="xxxxx@exemplo.com">
+         </div>
+        <div>
+            <label for="imes">Data de nascimento</label>
+            <input type="date" name="mes" id="imes">
+        </div>
+        
     </fieldset>
+   
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+         
+  </form>
 </body>
 </html>
