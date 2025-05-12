@@ -79,17 +79,41 @@
         </div>
          <div>
             <label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="isobrenome" placeholder="Segundo nome" maxlength="40" minlength="4"> 
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="Segundo nome" maxlength="40" minlength="4" required>   
          </div>
          <div>
             <label for="iemail">E-mail:</label>
-            <input type="email" name="email" id="iemail" placeholder="xxxxx@exemplo.com">
+            <input type="email" name="email" id="iemail" placeholder="xxxxx@exemplo.com" required>
          </div>
         <div>
             <label for="imes">Data de nascimento</label>
-            <input type="date" name="mes" id="imes">
+            <input type="date" name="mes" id="imes" required>
         </div>
-        
+          <div>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ ">Rio de Janeiro</option>
+                    <option value="SP" selected >São paulo</option>
+                </optgroup>
+
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PE">Pernambuco</option>
+                <option value="MA">Maranhão</option>
+                <option value="PA">Pará</option>
+            </select>
+        </div>
+        <div>
+            <label for="iprof">Profissão </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                 <option value="ADM">Admistrador</option>
+                 <option value="CONT">Contabilidade </option>
+                 <option value="DEV">desenvolvedor</option>
+                 <option value="PROF">Professor</option>
+            </datalist>
+        </div>
     </fieldset>
    
             <p>
