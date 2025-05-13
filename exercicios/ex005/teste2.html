@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #cor{
+            border-radius: 4px;
+            width: 20vw;
+        }
+       #formulario{
+        width: 20vw;
+       }
+       div{
+        padding: 4px;
+       }
+       legend{
+        font-size: 1.2em;
+        font-weight: bolder;
+       }
+    </style>
+</head>
+<body>
+    <h1> teste de formulário e checkbox</h1>
+
+    <fieldset id="cor">
+        <legend>
+            Qual dessas é sua cor favorita?
+            </legend>
+
+            <input type="checkbox" name="azul" id="iazul">
+            <label for="iazul">Azul</label> <br>
+
+            <input type="checkbox" name="red" id="ired">
+            <label for="ired">Vermelho</label> <br>
+            
+            <input type="checkbox" name="yellow" id="iyellow">
+            <label for="iyellow">Amarelo</label> <br> 
+
+            <input type="checkbox" name="purple" id="ipurple">
+            <label for="ipurple">Roxo</label> <br>
+
+
+            <input type="checkbox" name="laranja" id="ilaranja">
+            <label for="ilaranja">Laranja</label> <br>
+            
+            
+            
+    </fieldset>
+    <fieldset id="formulario">
+        <legend>Formulário</legend>
+        <form action="cadastro.php" method="get" autocomplete="on">
+
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Seu nome" required maxlength="40" minlength="4" autocomplete="name">
+            </div>
+
+           <div>
+               
+               <label for="iemail">E-mail:</label>
+               <input type="email" name="email" id="iemail" required maxlength="320" autocomplete="email">
+            </div>
+               <div>
+                
+                <label for="iprof">Qual é sua Profissão?</label> 
+                <select name="prof" id="iprof">
+                    <option value="devfront">Desenvolvedor Front-End</option>
+                     <option value="devback">Desenvolvedor Back-End</option>
+                        <option value="devfull">Desenvolvedor Full-stack</option>
+                    <option value="devj">Desenvolvimento de Jogos</option>
+                    <option value="devm">Desenvolvimento Mobile</option>
+                </select>
+               </div>
+               
+                <div>
+                    <label for="iprof2">Nehuma das acima? escreva aqui</label>
+                    <input type="text" name="prof2" id="iprof2" maxlength="40" min="4" autocomplete="organization">
+                </div>
+            </form>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
