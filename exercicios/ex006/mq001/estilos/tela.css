@@ -1,35 +1,41 @@
-@charset "UTF-8";
+@charset "UTF-8"; 
 /* Estilos para telas */
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
- 
-html{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em ;
-}
-header{
-    background-color: lightgray;
-}
-header > h1{
-    text-align: center;
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
-menu li{
-    padding: 10px;
-    display: inline-block ;
-    background-color: darkgray;
-    color: white
+header {
+  background-color: lightgray;
+  text-align: center;
 }
 
-header > ul{
-list-style-type: none;
-background-color: gray;
-
+menu ul {
+  list-style-type: none;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
 }
-article{
-    width: 600px;
-    margin: auto;
+
+menu li {
+  background-color: rgb(77, 77, 77);
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+menu li:hover {
+  background-color: white;
+  color: rgba(71, 70, 70, 0.568);
+}
+
+article {
+  max-width: 600px;
+  min-width: 300px;
+  margin: auto;
 }
