@@ -6,14 +6,16 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <span id="burguer" class="material-symbols-outlined">
-menu
+<span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+    menu
 </span>
-        <menu>
+
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -32,6 +34,16 @@ menu
         
             </article>
         </main>
-   
+  <script>
+    function clickMenu() {
+        let menu = document.getElementById('itens')
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none'
+        } else {
+            menu.style.display = 'block'
+        }
+    }
+</script>
+
 </body>
 </html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media print{
+    header h1{
+        display: none;
+    
+    }
+    article p { 
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1em;
+    }
+    span#burguer{
+        display: none;
+
+    }
+    main{
+        box-shadow: none;
+        border: 1px solid black;
+    }
+    menu{
+        display: none;
+    }
+    article::after{
+        content: 'Esse site foi desenvolvido pelo https://github.com/pedroxavier21, caso queira saber mais acesse o nosso site acesse:   http://127.0.0.1:5500/exercicios/ex006/mq005/estilos/index.html';
+    }
+}
