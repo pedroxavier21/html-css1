@@ -24,3 +24,30 @@
         content: 'Esse site foi desenvolvido pelo https://github.com/pedroxavier21, caso queira saber mais acesse o nosso site acesse:   http://127.0.0.1:5500/exercicios/ex006/mq005/estilos/index.html';
     }
 }
+
+
+
+@media screen and (min-width:768px) {
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu li{
+        
+        display: inline-block;
+        text-align: left;      
+    }
+    menu > ul > li > a {
+       border: 0px;
+       border-radius: 10px;
+    }
+    main{
+        width: 768px;
+    }
+}
+
+
+
+

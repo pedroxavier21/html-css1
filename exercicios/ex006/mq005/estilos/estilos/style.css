@@ -35,24 +35,28 @@ span#burguer{
     padding: 10px;
     text-align: center;
     cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease; /* ← AQUI */
 }
 span#burguer:hover{
     background-color: white;
     color: #2f4469;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 menu{
     display: none;
 }
-menu > ul > li > a{  padding: 10px;
+menu > ul > li > a {
+    padding: 10px;
     color: white;
     text-decoration: none;
     display: block;
     border-top: 1px solid black;
+    transition: background-color 0.3s ease, color 0.3s ease; /* ← AQUI */
 }
+
 menu > ul > li >a:hover{
     text-decoration: underline;
-    transition: 0.8s;
+    transition: 0.4s;
     background-color: white;
     color: #778ad9;
     
