@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de flex-box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: blue;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        div.container{
+         background-color: #fff;
+         width: 50vw;
+         height: 40vw;
+         margin: auto;
+         display: flex;
+         box-shadow: 4px 7px 9px rgba(0, 0, 0, 0.151);
+         border-radius: 10px;
+         flex-flow: row wrap;
+         justify-content: space-between;
+        align-items: center;
+         
+        }
+
+         div.container > .item{
+            border: 2px dotted blue;
+            width: 150px;
+            height: 61px;
+            align-self: center;   
+            margin: 10px;
+            padding: 10px;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Testando flex-box </h1>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
