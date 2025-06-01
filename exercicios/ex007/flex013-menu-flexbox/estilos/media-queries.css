@@ -1,7 +1,22 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 758px) {
-        a{
-            
-        }
+@media screen and (max-width: 650px) {
+    
+    header, nav{
+        flex-flow: column nowrap;
+    }
+
+
+    header h1 {
+         flex-basis: 50px;
+    }
+
+ a{ border-radius: none;
+      width: 100vw;  
+    border: 1px solid black;
+
+ }
+ main{
+        width: 100vw;
+ }
 }
