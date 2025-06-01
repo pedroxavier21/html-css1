@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Flex-boxs </title>
+    <style>
+        div.container{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        #i1{
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+
+        #i2{
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        #i3{
+            flex-basis: 150px;
+            flex-shrink: 2;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+
+    </div>
+   <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="12">B</div>
+        <div class="item" id="i3">C</div>
+   </div>
+
+</body>
+</html>  
